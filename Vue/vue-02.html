@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-bind</title>
+</head>
+<body>
+    <div id="app">
+            <!-- <a href="http://www.baidu.com">百度一下</a> -->
+            <!-- <a v-bind:href="url">百度一下
+                <img v-bind:class='klass' v-bind:src="img" alt="">
+                <img v-bind:class='{bg:isOn}' v-bind:src="img" alt=""> -->
+            <a :href="url">百度一下
+                <!-- <img :class='klass' :src="img" alt=""> -->
+                <img :class='{bg:isOn}' :src="img" alt="">
+
+
+
+            </a>
+
+
+    </div>
+    <style>
+        .bg{
+            border: #000 solid 4px;
+        }
+        .bg1{
+            width: 800px;
+            height: 300px;
+        }
+    </style>
+
+    <!-- 导入Vue.js框架 -->
+    <script src="vue.js"></script>
+    <script src="v-bind.js"></script>
+</body>
+</html>
